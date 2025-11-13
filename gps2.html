@@ -40,7 +40,7 @@
 
         // Custom car/bus icon
         const carIcon = L.icon({
-            iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH2Z-wk4HF2585cfK3xPhHjW5OAzUXJHUCCCHttErcaMdndDSq5IZ03BpRQarxbHHULHcjV4SYg7GN747GKTN94tUP9VMpLO4NwD3rBU6dFKsbVTkArl6ZwQfIELXlITKcFDORbiJI2DBOX-MjK1CPAAo0D47xSxDeoTvtuBmIQfqj5vuJq8xmPmsx-HHs/s1600/bus.png',
+            iconUrl: 'https://e7.pngegg.com/pngimages/361/692/png-clipart-motorcycle-helmets-computer-icons-super-bike-logo-motorcycle.png',
             iconSize: [20, 38],
             iconAnchor: [10, 38], // anchor bottom center
         });
@@ -59,9 +59,9 @@
 
         client.on('connect', () => {
             console.log('Connected to MQTT broker');
-            client.subscribe('car/gps', (err) => { //<<<<<<<<UBAH TOPIK INI 'car/gps'
+            client.subscribe('car/gps082', (err) => { //<<<<<<<<UBAH TOPIK INI 'car/gps'
                 if (!err) {
-                    console.log('Subscribed to car/gps topic');
+                    console.log('Subscribed to car/gps082 topic');
                 }
             });
         });

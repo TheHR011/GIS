@@ -69,7 +69,7 @@
         client.on('message', (topic, message) => {
             try {
                 const data = JSON.parse(message.toString());
-                const { latitude, longitude, Penumpang, Wanita, Pria, Suhu, Baterai, Kecepatan } = data;
+                const { latitude, Suhu, Bensin, Kecepatan } = data;
 
                 // Add to trail
                 trailPoints.push([latitude, longitude]);
